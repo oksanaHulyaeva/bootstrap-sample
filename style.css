@@ -30,6 +30,10 @@ li {
   align-items: center;
 }
 
+.content-limit {
+  max-width: 1400px;
+}
+
 /* HEADER */
 
 .header {
@@ -46,9 +50,17 @@ li {
   border-bottom: 2px solid rgba(255, 255, 255, .2)
 }
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 .navbar-collapse {
   justify-content: flex-end;
   flex-grow: 0;
+}
+
+.nav-item {
+  margin-right: 10px;
+  letter-spacing: 1px;
 }
 
 .navbar-brand,
@@ -203,6 +215,7 @@ li {
 
 .works {
   height: 770px;
+  overflow: hidden;
   background-image: url(./assets/works-bg.png);
   background-position: center;
   background-size: cover;
@@ -396,7 +409,39 @@ li {
   }
 }
 
+
+@media only screen and (max-width: 1240px) {
+  .slider-container {
+    max-width: 700px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .works {
+    height: 500px;
+  }
+  .slider-container {
+    max-width: 550px;
+    max-height: 300px;
+  }
+  .arrow-next {
+    right: -50px;
+  }
+  .arrow-prev {
+    left: -50px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
+  .slider-container {
+    max-width: 400px;
+  }
+  .arrow-next {
+    right: -30px;
+  }
+  .arrow-prev {
+    left: -30px;
+  }
   .map,
   .address {
     height: 400px;
@@ -404,5 +449,22 @@ li {
   .contacts-title {
     margin: 0;
     bottom: 45%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .slider-container {
+    max-width: 300px;
+  }
+  .arrow-next,
+  .arrow-prev {
+    width: 15px;
+    height: 25px;
+  }
+  .arrow-next {
+    right: -30px;
+  }
+  .arrow-prev {
+    left: -30px;
   }
 }
