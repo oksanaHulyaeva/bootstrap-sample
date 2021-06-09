@@ -149,6 +149,10 @@ body {
   padding: 13px 27px;
 }
 
+.menu-btn:hover {
+  background: var(--accent-hover-color);
+}
+
 .hero {
   min-height: 670px;
 }
