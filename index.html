@@ -5,8 +5,179 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drupal Masters</title>
+  <link rel="shortcut icon" href="assets/drupal_logo.ico">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <header class="header">
+    <nav class="container-fluid navbar navbar-expand-lg px-sm-3 px-lg-5">
+      <div class="container-fluid content-limit">
+        <a class="navbar-brand me-auto" href="/">Drumasters</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav me-auto mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#aboutSection">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#stackSection">Technologies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#worksSection">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactsSection">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="menu-btn">Hire us</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container-fluid hero flex-column-center">
+      <h1 class="hero-title">Power <span class="title-accent">of</span> Drupal</h1>
+      <p class="hero-text text-center mt-3">We are developing a super cool sites using the power of Drupal CMS. <br> 
+        We have great experience and a great pleasure to get down to your <br>project!
+      </p>
+    </section>
+
+  </header>
+
+  <section class="container-fluid px-4 px-lg-5 flex-column-center about" id="aboutSection">
+    <div class="row">
+      <h2 class="about-title text-center">We are <span class="about-accent">drupal</span> masters</h2>
+    </div>
+    <div class="row content-limit">
+      <div class="col-12 col-lg-6 column1">
+        <p class="about-text text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+          essentially unchanged.
+        </p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 column2">
+        <p class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+          essentially unchanged. </p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-2 d-flex flex-column-center">
+        <div class="circle">
+        </div>
+        <p class="membership-text text-center">We are certificated members of Drupal Association.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid px-4 px-lg-5 flex-column-center stack" id="stackSection">
+    <div class="row">
+      <h2 class="stack-title text-center">Technology <span class="stack-accent">stack</span></h2>
+    </div>
+    <div class="row content-limit">
+      <div class="col-12 col-lg-6 column1">
+        <p class="stack-text text-left">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
+          essentially unchanged.
+        </p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 column2">
+        <h3 class="stack-subtitle">Design</h3>
+        <p class="stack-text">Prototyping and mockups, user experience & user interface design, responsive grids.</p>
+        <p class="stack-text">Few words about our vision of good website design.</p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 column3">
+        <h3 class="stack-subtitle">Frontend</h3>
+        <p class="stack-text">html 5, css 3, javascript, jade, gulp, grunt, scss, less, sass,  canvas, responsive design</p>
+        <h3 class="stack-subtitle">Backend & Frameworks</h3>
+        <p class="stack-text">Drupal, Twitter Bootstrap, MySQL, jQuery,  PHP, Symfony, git, drush</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid px-4 px-lg-5 flex-column-center works" id="worksSection">
+    <div class="row">
+      <h2 class="works-title text-center">Our <span class="works-accent">latest</span> works</h2>
+    </div>
+    <div class="row">
+      <div class="col-12 slider-container">
+        <div><img src="./assets/slide1.png" alt="Project1"></div>
+        <div><img src="./assets/slide1.png" alt="Project1"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid contacts" id="contactsSection">
+    <div class="row">
+      <h2 class="contacts-title text-center">
+        <mark class="contacts-mark">Contact <span class="contacts-accent">us</span></mark>
+      </h2>
+    </div>
+    <div class="row d-flex justify-content-between">
+      <div class="col-12 col-md-6 map"></div>
+      <div class="col-12 col-md-5 address">
+        <h3 class="contacts-subtitle">Address</h3>
+        <p class="contacts-text">Republic of Belarus, Minsk, Korzhenevskogo st,  28, 117</p>
+        <h3 class="contacts-subtitle">Call us or 
+          <button
+            class="open-modal-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal">write something</button>
+        </h3>
+        <p class="contacts-text">+375 29 660-90-70 <br> skype: koltungena</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="flex-column-center modal-form">
+            <h5 class="form-title">Let's begin the conversation!</h5>
+            <input type="text" class="modal-input" id="input-name" placeholder="Dmitry Chumak">
+            <input type="email" class="modal-input" placeholder="E-mail">
+            <input type="text" class="modal-input" placeholder="Subject">
+            <button type="submit" class="btn-submit" data-bs-dismiss="modal">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
