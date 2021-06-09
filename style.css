@@ -298,7 +298,7 @@ body {
 
 .map {
   height: 730px;
-  background-image: url(/assets/map.png);
+  background-image: url(./assets/map.png);
 }
 
 .address {
@@ -328,7 +328,7 @@ body {
 
 /* MODAL */
 .modal-content {
-  background-image: url(/assets/contact-bg-overlay.png);
+  background-image: url(./assets/contact-bg-overlay.png);
 }
 
 .modal-header {
